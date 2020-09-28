@@ -1,6 +1,9 @@
 package com.libing.springboot.entities;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Date;
+
 
 public class Employee {
 
