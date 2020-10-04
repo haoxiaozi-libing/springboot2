@@ -20,9 +20,10 @@ public class EmployeeController {
 
 
     @GetMapping("/emps")
-    public String Emps(Model model){
+    public String Emps(Model model) {
         Collection<Employee> emps = employeeDao.getAll();
-        model.addAttribute("emps",emps);
-        return "emp/list";
+        model.addAttribute("emps", emps);
+        return "list";
     }
+
 }
