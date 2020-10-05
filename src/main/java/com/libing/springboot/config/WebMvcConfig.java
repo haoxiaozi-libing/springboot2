@@ -41,12 +41,13 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
                 registry.addViewController("/main.html").setViewName("dashboard");
             }
 
-            @Override
+            // 这个方法是去处理页面非法登录的
+           /* @Override
             public void addInterceptors(InterceptorRegistry registry) {
                 super.addInterceptors(registry);
                 registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**").
                         excludePathPatterns("/index.html","/","/user/login");
-            }
+            }*/
         };
 
         return adapter;
